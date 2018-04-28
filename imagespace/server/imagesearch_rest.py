@@ -43,6 +43,7 @@ class ImageSearch(Resource):
         return self._imageSearch(params)
 
     def _imageSearch(self, params):
+        print("Hello World!")
         limit = params['limit'] if 'limit' in params else '100'
         query = params['query'] if 'query' in params else '*:*'
         offset = params['offset'] if 'offset' in params else '0'
