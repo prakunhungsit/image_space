@@ -27,7 +27,7 @@ EXPOSE 8080
 
 RUN apt-get update && apt-get install --yes openjdk-7-jre netcat
 
-RUN git clone https://github.com/memex-explorer/image_space.git
+RUN git clone https://github.com/prakunhungsit/image_space.git
 RUN girder-install plugin -s image_space/imagespace*
 
 RUN npm install --only=prod --unsafe-perm
